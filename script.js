@@ -10,7 +10,7 @@ document.getElementById('container').appendChild(renderer.domElement);
 const controls = new OrbitControls(camera, renderer.domElement)
 
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load('./8k_earth_daymap.jpg');
+const earthTexture = textureLoader.load('./img/8k_earth_daymap.jpg');
 const earthGeometry = new THREE.SphereGeometry(5, 32, 32);
 const earthMaterial = new THREE.MeshBasicMaterial({ map: earthTexture });
 const earthMesh = new THREE.Mesh(earthGeometry, earthMaterial);
